@@ -1,40 +1,17 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Frequencey of Stop
-        </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-            crossorigin=""/>
-        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-            crossorigin=""></script>
-        <script src='https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.js'></script>
-        <link href='https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.css' rel='stylesheet'>
-          
-        <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
+<body>
 
-        <link rel="stylesheet" href="style.css">
+<h1>The Public Transition of Vancouver</h1>
 
-    </head>
-    <body>
-        <div id="heatmap"><script src="heatmap.js"></script></div>
-        <div id="isochrone_map">
-            <script src="isochrone_map.js"></script>
-        </div>
-        <div id="transportation_map">
-            <script src="transportation_map.js"></script>
-            <div>
-                <button onclick="clearMap()" class="clear-button">Clear</button>
-              </div>
-        </div>
-        <div id="map1">
-            <script src="map1.js"></script>
-        </div>
-    </body>
+<p>Map using Mapbox:</p>
+<iframe src="mapbox.html" width="100%" height="500">
+</iframe>
+
+<p>Map using leaflet:</p>
+<iframe src="leaflet.html" width="100%" height="500" style="border:1px solid black;">
+</iframe>
+
+
+</body>
 </html>

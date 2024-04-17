@@ -194,21 +194,8 @@ async function main() {
     var evening60_group = L.layerGroup([evening60_geoJson]);
     var evening90_group = L.layerGroup([evening90_geoJson]);
 
-
-    //add as overlays so they are a checkboxes instead of radio inputs
-    // var layerControl = L.control.layers().addTo(map);
-    // layerControl.addOverlay(morning15_group, "Morning 15min commute");
-    // layerControl.addOverlay(morning30_group, "Morning 30min commute");
-    // layerControl.addOverlay(morning45_group, "Morning 45min commute");
-    // layerControl.addOverlay(morning60_group, "Morning 60min commute");
-    // layerControl.addOverlay(morning90_group, "Morning 90min commute");
-    // layerControl.addOverlay(evening15_group, "Evening 15min commute");
-    // layerControl.addOverlay(evening30_group, "Evening 30min commute");
-    // layerControl.addOverlay(evening45_group, "Evening 45min commute");
-    // layerControl.addOverlay(evening60_group, "Evening 60min commute");
-    // layerControl.addOverlay(evening90_group, "Evening 90min commute");
-
-    var layerControl = L.control.layers({}, {
+    
+    var layerControl = L.control.layers(null, {
         "<span style='color: #032d5a'>Morning 15 minute commute</span>": morning15_group,
         "<span style='color: #097883'>Morning 30 minute commute</span>": morning30_group,
         "<span style='color: #11a976'>Morning 45 minute commute</span>": morning45_group,
